@@ -1,0 +1,22 @@
+h1{
+    font-size: 300%;
+    font-style: bold;
+    color: #a20000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: auto;
+    width: 100px;
+    height: 120px;
+}
+
+.introducao{
+  position: absolute;
+  left: auto;
+  width: 100px;
+  height: 120px;
+}

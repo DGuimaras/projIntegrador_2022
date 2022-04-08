@@ -4,6 +4,64 @@ html, body {
   background-color: #eee;
 }
 
+nav {
+  min-width: 100%;
+}
+
+#menuinicio {
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px rgb(199, 199, 199);
+}
+
+#menuinicio ul {
+  display: grid;
+  list-style-type: none;
+  background-color: #eee;
+  padding-left: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+#menuinicio li {
+  float: center;
+  color: black; 
+  text-align: center; 
+}
+
+#menuinicio .center {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#menuinicio .center li {
+  vertical-align: middle;
+}
+
+#menuinicio .aboutus:hover {
+  background-color: #e0e0e0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 10px;
+}
+
+#menuinicio .contacts:hover {
+  background-color: #e0e0e0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 10px;
+}
+ 
+
 #container {
   background-color: white;
   position: absolute;
@@ -88,4 +146,44 @@ html, body {
   border: 0.2px solid rgb(231, 231, 231);
   width: 70%;
   box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#criarconta {
+  background-color: white;
+  position: absolute;
+  display: none;
+  text-align: center;
+  top: 250px;
+  left: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  padding: 10px;
+}
+
+#criarconta input {
+  font-family: Poppins;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+  width: 95%;
+}
+
+#criarconta button {
+  background-color: #a20000;
+  color: white;
+  font-family: Poppins;
+  width: 95%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 8px;
+  border-radius: 5px;
+  border: #a20000;
+  box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#criarconta button:hover {
+  background-color: #5c0000;
 }

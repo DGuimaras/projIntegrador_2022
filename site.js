@@ -9,3 +9,7 @@ function showCategories() {
       y.style.marginTop = "70px";
     }
 }
+
+document.getElementById("criar").addEventListener("click", function(){
+  document.getElementById("criarconta").style.display = "block";
+});

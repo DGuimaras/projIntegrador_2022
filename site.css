@@ -48,7 +48,7 @@ nav {
 
 #menu .center {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 6px;
@@ -92,6 +92,13 @@ nav {
 }
 
 #menu .contacts:hover {
+    background-color: #e0e0e0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 10px;
+}
+
+#menu .events:hover {
     background-color: #e0e0e0;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;

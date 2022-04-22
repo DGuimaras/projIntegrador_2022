@@ -1,8 +1,11 @@
 package com.example.demo.models;
 
+import org.springframework.context.annotation.Primary;
+
 import javax.persistence.*;
 
 @Entity
+
 @Table
 public class User {
     @Id

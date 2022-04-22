@@ -11,21 +11,21 @@ nav {
 #menuinicio {
   position: fixed;
   z-index: 900;
-  top: 0;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px rgb(199, 199, 199);
+  bottom: 0;
+  -webkit-box-shadow: 0 -8px 6px -6px black;
+  -moz-box-shadow: 0 -8px 6px -6px black;
+  box-shadow: 0 -8px 6px -6px rgb(199, 199, 199);
 }
 
 #menuinicio ul {
+  background-color: white;
   display: grid;
   list-style-type: none;
-  background-color: #eee;
   padding-left: 0;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin: 0;
-  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
 }
 
 #menuinicio li {
@@ -36,9 +36,9 @@ nav {
 
 #menuinicio .center {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-right: 5%;
-  margin-left: 5%;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 10%;
+  margin-left: 10%;
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -47,7 +47,7 @@ nav {
   vertical-align: middle;
 }
 
-#menu li a {
+#menuinicio li a {
   color: black;
   font-family: Poppins;
   text-decoration: none;
@@ -65,18 +65,6 @@ nav {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 10px;
-}
- 
-#pieces .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #a20000;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
 }
 
 #container {

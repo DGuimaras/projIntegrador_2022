@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
+
+html, body {
+  background-color: #eee;
+}
+
+nav {
+  min-width: 100%;
+}
+
+#menuinicio {
+  position: fixed;
+  z-index: 900;
+  bottom: 0;
+  -webkit-box-shadow: 0 -8px 6px -6px black;
+  -moz-box-shadow: 0 -8px 6px -6px black;
+  box-shadow: 0 -8px 6px -6px rgb(199, 199, 199);
+}
+
+#menuinicio ul {
+  background-color: white;
+  display: grid;
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0;
+  align-items: center;
+}
+
+#menuinicio li {
+  float: center;
+  color: black; 
+  text-align: center; 
+}
+
+#menuinicio .center {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#menuinicio .center li {
+  vertical-align: middle;
+}
+
+#menuinicio li a {
+  color: black;
+  font-family: Poppins;
+  text-decoration: none;
+}
+
+#menuinicio .aboutus:hover {
+  background-color: #e0e0e0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 10px;
+}
+
+#menuinicio .contacts:hover {
+  background-color: #e0e0e0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 10px;
+}
+
+#container {
+  background-color: white;
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 250px;
+  left: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  padding: 10px;
+}
+
+#container input {
+  font-family: Poppins;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+  width: 95%;
+}
+
+#container button {
+  background-color: #a20000;
+  color: white;
+  font-family: Poppins;
+  width: 95%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 8px;
+  border-radius: 5px;
+  border: #a20000;
+  box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#container button:hover {
+  background-color: #5c0000;
+}
+
+#introducao {
+  position: absolute;
+  left: 300px;
+  top: 100px;
+  margin-top: 100px;
+  font-family: Poppins;
+  display: block;
+  width: 35%;
+}
+
+#introducao h1 {
+  font-size: 200%;
+  font-weight: bolder;
+  color: #a20000;
+}
+
+
+#introducao h2 {
+  font-size: larger;
+}
+
+#introducao button {
+  background-color: #a20000;
+  color: white;
+  font-family: Poppins;
+  font-size: larger;
+  font-weight: bolder;
+  width: 90%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  border: #a20000;
+  box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#introducao button:hover {
+  background-color: #5c0000;
+}
+
+#container hr {
+  color: rgb(235, 235, 235);
+  border: 0.2px solid rgb(231, 231, 231);
+  width: 70%;
+  box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#criarconta {
+  background-color: white;
+  position: absolute;
+  display: none;
+  text-align: center;
+  top: 250px;
+  left: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  padding: 10px;
+}
+
+#criarconta input {
+  font-family: Poppins;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+  width: 95%;
+}
+
+#criarconta button {
+  background-color: #a20000;
+  color: white;
+  font-family: Poppins;
+  width: 95%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 8px;
+  border-radius: 5px;
+  border: #a20000;
+  box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#criarconta button:hover {
+  background-color: #5c0000;
+}

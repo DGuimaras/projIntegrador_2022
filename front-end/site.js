@@ -10,12 +10,18 @@ function showCategories() {
     }
 }
 
-document.getElementById("criar").addEventListener("click", function(){
-  document.getElementById("container").style.display = "none";
-  document.getElementById("criarconta").style.display = "block";
-});
+function goToAbout() {
+  location.replace("about.html");
+}
 
-document.getElementById("iniciar_sessao").addEventListener("click", function(){
-  document.getElementById("container").style.display = "block";
-  document.getElementById("criarconta").style.display = "none";
-});
+function goToContacts() {
+  location.replace("contacts.html");
+}
+
+function goToLoja() {
+  location.replace("site.html");
+}
+
+function goToEvents() {
+  location.replace("events.html");
+}

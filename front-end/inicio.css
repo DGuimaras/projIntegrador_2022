@@ -67,7 +67,7 @@ nav {
   border-radius: 10px;
 }
 
-#container {
+#iniciar {
   background-color: white;
   position: absolute;
   display: block;
@@ -80,7 +80,7 @@ nav {
   padding: 10px;
 }
 
-#container input {
+#iniciar input {
   font-family: Poppins;
   border: 1px solid rgb(175, 175, 175);
   border-radius: 5px;
@@ -90,7 +90,7 @@ nav {
   width: 95%;
 }
 
-#container button {
+#iniciar button {
   background-color: #a20000;
   color: white;
   font-family: Poppins;
@@ -103,7 +103,7 @@ nav {
   box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
 }
 
-#container button:hover {
+#iniciar button:hover {
   background-color: #5c0000;
 }
 
@@ -146,19 +146,19 @@ nav {
   background-color: #5c0000;
 }
 
-#container hr {
+#iniciar hr {
   color: rgb(235, 235, 235);
   border: 0.2px solid rgb(231, 231, 231);
   width: 70%;
   box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
 }
 
-#criarconta {
+#criar {
+  display: none;
   background-color: white;
   position: absolute;
-  display: none;
   text-align: center;
-  top: 250px;
+  top: 140px;
   left: 1000px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -166,7 +166,7 @@ nav {
   padding: 10px;
 }
 
-#criarconta input {
+#criar input {
   font-family: Poppins;
   border: 1px solid rgb(175, 175, 175);
   border-radius: 5px;
@@ -176,7 +176,7 @@ nav {
   width: 95%;
 }
 
-#criarconta button {
+#criar button {
   background-color: #a20000;
   color: white;
   font-family: Poppins;
@@ -189,6 +189,13 @@ nav {
   box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
 }
 
-#criarconta button:hover {
+#criar button:hover {
   background-color: #5c0000;
+}
+
+#criar hr {
+  color: rgb(235, 235, 235);
+  border: 0.2px solid rgb(231, 231, 231);
+  width: 70%;
+  box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
 }

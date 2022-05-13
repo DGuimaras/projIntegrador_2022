@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
 
-#menu .loja {
-    border-bottom: 1px solid #a20000;
-}
-
 html, body {
     height: 100%; 
     width: 100%;
@@ -12,6 +8,10 @@ html, body {
 
 nav {
     min-width: 100%;
+}
+
+#menu .contacts {
+    border-bottom: 1px solid #a20000;
 }
 
 #menu {
@@ -69,6 +69,7 @@ nav {
     margin-bottom: 7px;
     margin-top: 7px;
     margin-right: 7px;
+  
 }
   
 #menu li a {
@@ -91,7 +92,7 @@ nav {
     border-radius: 10px;
 }
 
-#menu .contacts:hover {
+#menu .loja:hover {
     background-color: #e0e0e0;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -104,92 +105,3 @@ nav {
     -moz-border-radius: 8px;
     border-radius: 10px;
 }
-
-.fixed-bottom {
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-  
-.pagination {
-    display: inline-block;
-    margin-top: 6px;
-}
-  
-.pagination a {
-    background-color: #ccc;
-    font-family: Poppins;
-    font-size: 70%;
-    border-radius: 5px;
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-    margin: 0;
-}
-  
-.pagination a.loja {
-    background-color: #a20000;
-    border: 1px solid #a20000;
-    color: white;
-}
-
-.pagination a:hover:not(.loja) {background-color: #ddd;}
-
-#pieces {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 70px;
-    row-gap: 6px;
-    column-gap: 6px;
-}
-
-#pieces #container {
-    position: relative;
-}
-
-#pieces #container img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-  
-#pieces #container .overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); 
-  color: white;
-  font-family: Poppins;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-#categories {
-    display: none;
-    margin-top: 80px;
-    text-align: center;
-}
-
-#categories button {
-    margin: 10px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
-    border-radius: 12px;
-    text-align: center;
-    background-color: #a20000;
-    color: white;
-    font-family: Poppins;
-    border: #a20000;
-    box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
-}
-
-#categories button:hover {
-    background-color: #5c0000;
-  }

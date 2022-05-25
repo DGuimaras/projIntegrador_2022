@@ -139,25 +139,55 @@ nav {
 
 .pagination a:hover:not(.events) {background-color: #ddd;}
 
-#pieces {
+#pieces_correntes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 70px;
+    margin-top: 20px;
     row-gap: 6px;
     column-gap: 6px;
 }
 
-#pieces #container {
+#pieces_correntes #container {
     position: relative;
 }
 
-#pieces #container img {
+#pieces_correntes #container img {
     display: block;
     width: 100%;
     height: auto;
 }
   
-#pieces #container .overlay {
+#pieces_correntes #container .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    font-family: Poppins;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#pieces_acabados {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    row-gap: 6px;
+    column-gap: 6px;
+}
+
+#pieces_acabados #container {
+    position: relative;
+}
+
+#pieces_acabados #container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+#pieces_acabados #container .overlay {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); 
@@ -192,4 +222,29 @@ nav {
 
 #categories button:hover {
     background-color: #5c0000;
-  }
+}
+
+#over_notover_events {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#over_notover_events button {
+    border: white;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: Poppins;
+}
+
+#over_notover_events #correntes {
+    border-bottom: 1px solid #a20000;
+}
+
+#over_notover_events button:hover {
+    background-color: #eee;
+}

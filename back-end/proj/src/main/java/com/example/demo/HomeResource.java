@@ -14,7 +14,12 @@ public class HomeResource {
 
     @GetMapping("/")
     public String home() {
-        return ("<h1>Welcome</h1>");
+        return ("/../pages/main_page.jsp");
+    }
+
+    @GetMapping("/piece")
+    public String arte() {
+        return ("/../pages/pieces.jsp");
     }
 
     @GetMapping("/user")

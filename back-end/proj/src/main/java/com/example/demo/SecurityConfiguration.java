@@ -35,9 +35,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/user").hasAnyRole("ADMIN", "USER")
                 .antMatchers("/").permitAll()
                 .antMatchers("/demo/add").permitAll()
+                .antMatchers("/main_page").permitAll()
                 .and()
                 .formLogin()
                 .loginPage("/login").permitAll();
+
     }
     @Override
     public void configure(WebSecurity webSecurity) throws Exception {

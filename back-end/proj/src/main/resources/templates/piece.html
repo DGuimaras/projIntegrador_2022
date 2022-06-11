@@ -11,15 +11,15 @@
     <body>
         <nav id="menu">
             <ul>
-                <li class="profile"><a href="#perfil">Perfil</a></li>
+                <li onclick="goToProfile()" class="profile"><a href="/profile">Perfil</a></li>
                 <div class="center">
-                    <li onclick="goToLoja()" class="loja"><a href="#loja">Loja</a></li>
-                    <li onclick="goToEvents()" class="events"><a href="#events">Eventos</a></li>
-                    <li onclick="goToAbout()" class="aboutus"><a href="#aboutus">Sobre nós</a></li>
-                    <li onclick="goToContacts()" class="contacts"><a href="#contact">Contactos</a></li>
+                    <li onclick="goToLoja()" class="loja"><a href="/">Loja</a></li>
+                    <li onclick="goToEvents()" class="events"><a href="/events">Eventos</a></li>
+                    <li onclick="goToAbout()" class="aboutus"><a href="/about">Sobre nós</a></li>
+                    <li onclick="goToContacts()" class="contacts"><a href="/contacts">Contactos</a></li>
                 </div>
-                <input type="text" placeholder="Pesquisa..">
-            </ul> 
+                <input onclick="showCategories()" type="text" placeholder="Pesquisa..">
+            </ul>
         </nav>
         <section id="categories">
             <button type="button">Categorie</button>

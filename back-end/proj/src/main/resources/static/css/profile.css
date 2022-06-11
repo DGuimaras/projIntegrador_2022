@@ -1,0 +1,97 @@
+#foto_perfil {
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 210px;
+    margin-left: 235px;
+    row-gap: 6px;
+    column-gap: 6px;
+    width: 50%;
+}
+
+#foto_perfil #container {
+    position: relative;
+}
+
+#foto_perfil #container img {
+    display: block;
+    width: 50%;
+    height: auto;
+    border-radius: 20%;
+}
+
+#foto_perfil #container .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Poppins;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#foto_perfil .nome{
+    font-family: Poppins;
+    font-size: 200%;
+    margin-left: 450px;
+    margin-top: -270px;
+}
+
+#foto_perfil p{
+    font-family: Poppins;
+    font-size: 150%;
+    margin-left: 450px;
+    margin-top: -16px;
+}
+
+#perfil_botao{
+    background-color: #a20000;
+    color: white;
+    font-family: Poppins;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 8px;
+    border-radius: 5px;
+    border: #a20000;
+    margin-left: 900px;
+    width: 15%;
+    cursor: pointer;
+}
+
+#perfil_botao:after{
+    content: ' \270E';
+}
+
+#editar_perfil{
+    display: none;
+    margin-top: 80px;
+    font-family: Poppins;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#editar_nome{
+
+    font-family: Poppins;
+    font-size: 80%;
+    border-radius: 12px;
+    border: none;
+    width: 30%;
+    height: 8%;
+    box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#editar{
+    background-color: #a20000;
+    color: white;
+    font-family: Poppins;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 8px;
+    border-radius: 5px;
+    border: #a20000;
+    margin-left: 10%;
+    width: 10%;
+    cursor: pointer;
+}

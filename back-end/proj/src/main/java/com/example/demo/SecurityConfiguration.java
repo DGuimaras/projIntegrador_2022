@@ -32,16 +32,22 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/admin").hasRole("ADMIN")
+                .antMatchers("/add_articles").hasRole("ADMIN")
                 .antMatchers("/user").hasAnyRole("ADMIN", "USER")
                 .antMatchers("/").permitAll()
                 .antMatchers("/demo/add").permitAll()
+                .antMatchers("/main_page").permitAll()
+                .antMatchers("/article/add").permitAll()
+                .antMatchers("/profile").authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/login").permitAll();
+
     }
     @Override
     public void configure(WebSecurity webSecurity) throws Exception {
         webSecurity.ignoring().antMatchers(POST, "/demo/add");
+        webSecurity.ignoring().antMatchers(POST, "/article/add");
     }
     @Bean
     public PasswordEncoder getPasswordEncoder() {

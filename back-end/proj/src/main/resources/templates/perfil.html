@@ -1,0 +1,48 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/perfil.css">
+        <meta charset=UTF-8>       
+        <title>Vendas da Associação</title>
+        <script th:src="@{/js/script.js}"></script>
+    </head>
+
+    <body>
+        <nav id="menu">
+            <ul>
+                <li onclick="goToProfile()" class="profile" id="pf" ><a href="/profile">Perfil</a></li>
+                <div class="center">
+                    <li onclick="goToLoja()" class="loja" id="lj" ><a href="/">Loja</a></li>
+                    <li onclick="goToEvents()" class="events" id="ev" ><a href="/events">Eventos</a></li>
+                    <li onclick="goToAbout()" class="aboutus" id="abt" ><a href="/about">Sobre nós</a></li>
+                    <li onclick="goToContacts()" class="contacts" id="ctct" ><a href="/contacts">Contactos</a></li>
+                </div>
+                <input onclick="showCategories()" type="text" placeholder="Pesquisa..">
+            </ul>
+        </nav>
+        <div id="organization">
+            <section id="foto_perfil" class="foto_perfil"> 
+                <div id="container">
+                    <img src="https://images.virgula.com.br/2014/10/01/4111311463-capa-dia-dos-idosos.jpg" height="250" width="250" alt="">
+                    <h2 class="nome" id="nome">Ermelinda Silva</h2>
+                </div>
+                <button id="perfil_botao" type="input" onclick="editar_perfil()">Editar Perfil </button>
+                <div id="editar_perfil">
+                    Nome de Utilizador: <br> <input id="editar_nome" type="text" placeholder=" Inserir Nome">
+                    <br> <br>
+                    Foto de Perfil: <br> <input id="add_img" type="file"> <br> <br>
+                    <button type="submit" id="editar" onclick="sub_edicao()">Guardar</button>
+                </div>
+            </section>
+            <section id="pieces_reservadas" class="pieces_reservadas">
+                <h2>Peças Reservadas</h2>
+                <strong>Ainda sem peças reservadas :(</strong>
+            </section>
+            <section id="eventos_inscritos" class="eventos_inscritos">
+                <h2>Eventos</h2>
+                <strong>Ainda não está inscrito em nenhum evento :(</strong>
+            </section>
+        </div>
+        <script th:src="@{/js/script.js}"></script>
+    </body> 
+
+</html>

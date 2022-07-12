@@ -1,15 +1,15 @@
 function goToAbout() {
-    location.replace("about");
-  }
-  
-  function goToContacts() {
-    location.replace("contacts");
-  }
+  location.replace("about");
+}
 
-  function goToLoja() {
-    location.replace("/");
-  }
+function goToContacts() {
+  location.replace("contacts");
+}
 
-  function goToEvents() {
-    location.replace("events");
-  }
+function goToLoja() {
+  location.replace("/");
+}
+
+function goToEvents() {
+  location.replace("events");
+}

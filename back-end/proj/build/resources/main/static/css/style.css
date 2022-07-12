@@ -145,12 +145,14 @@ nav {
 
 #pieces #container {
     position: relative;
+    /*max-width: auto;*/
+    max-height: 390px;
 }
 
 #pieces #container img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
   
 #pieces #container .overlay {
@@ -491,3 +493,233 @@ nav {
 #over_notover_events button:hover {
     background-color: #eee;
 }
+
+.cenas{
+    margin-top: -35%;
+    float:right;
+    width: 50%;
+    height: 100%;
+    border-radius: 12px;
+    padding: 2% 2% 2% 2%;
+    background-color: #eee;
+    box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+.cenas p{
+    font-family: Poppins;
+    font-size: 120%;
+}
+
+#titulo {
+    font-family: Poppins;
+    float: left;
+    margin-right: 55%;
+    bottom: 50%;
+    font-size: 80%;
+    border-radius: 12px;
+    border: none;
+    width: 75%;
+    height: 10%;
+    box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#autor, #contactos {
+    font-family: Poppins;
+    float: left;
+    margin-right: 55%;
+    bottom: 50%;
+    font-size: 80%;
+    border-radius: 12px;
+    border: none;
+    width: 90%;
+    height: 8%;
+    box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+
+#descricao {
+    font-family: Poppins;
+    float: left;
+    font-size: 80%;
+    border-radius: 12px;
+    border: none;
+    width: 80%;
+    height: 25%;
+    resize: none;
+    box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#add_img {
+    background-color: #a20000;
+    color: white;
+    font-family: Poppins;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 7px;
+    margin: 8px;
+    border-radius: 5px;
+    border: #a20000;
+}
+
+#preco{
+    font-family: Poppins;
+    float: left;
+    font-size: 80%;
+    border-radius: 12px;
+    border: none;
+    width: 18%;
+    height: 5%;
+    resize: none;
+    box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#publish{
+    background-color: #a20000;
+    color: white;
+    font-family: Poppins;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 8px;
+    border-radius: 5px;
+    border: #a20000;
+}
+
+.cenas2{
+    float: left;
+    width: 400;
+}
+
+.c{
+    float: left;
+    width: 350;
+    height: 500;
+}
+
+#pieces_add {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 70px;
+    row-gap: 6px;
+    column-gap: 6px;
+    width: 100%;
+}
+
+#pieces_add #container {
+    position: relative;
+}
+
+#pieces_add #container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#pieces_add #container .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Poppins;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#foto_perfil {
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 210px;
+    margin-left: 235px;
+    row-gap: 6px;
+    column-gap: 6px;
+    width: 50%;
+}
+
+#foto_perfil #container {
+    position: relative;
+}
+
+#foto_perfil #container img {
+    display: block;
+    width: 50%;
+    height: auto;
+    border-radius: 20%;
+}
+
+#foto_perfil #container .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Poppins;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#foto_perfil .nome{
+    font-family: Poppins;
+    font-size: 200%;
+    margin-left: 450px;
+    margin-top: -270px;
+}
+
+#foto_perfil p{
+    font-family: Poppins;
+    font-size: 150%;
+    margin-left: 450px;
+    margin-top: -16px;
+}
+
+#perfil_botao{
+    background-color: #a20000;
+    color: white;
+    font-family: Poppins;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 8px;
+    border-radius: 5px;
+    border: #a20000;
+    margin-left: 900px;
+    width: 15%;
+    cursor: pointer;
+}
+
+#perfil_botao:after{
+    content: ' \270E';
+}
+
+#editar_perfil{
+    display: none;
+    margin-top: 80px;
+    font-family: Poppins;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+#editar_nome{
+
+    font-family: Poppins;
+    font-size: 80%;
+    border-radius: 12px;
+    border: none;
+    width: 30%;
+    height: 8%;
+    box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.2), 0 3px 10px 0 rgba(187, 187, 187, 0.2);
+}
+
+#editar{
+    background-color: #a20000;
+    color: white;
+    font-family: Poppins;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 8px;
+    border-radius: 5px;
+    border: #a20000;
+    margin-left: 10%;
+    width: 10%;
+    cursor: pointer;
+}
+

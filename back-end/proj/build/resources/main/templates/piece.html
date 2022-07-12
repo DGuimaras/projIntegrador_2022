@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-
+<html xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
 <!-- A declaração DOCTYPE declara a versão do HTML usado no documento -->
 
 <html lang=pt>
     <link rel="stylesheet" type="text/css" href="/css/piece.css">
     <meta charset=UTF-8>       
     <title>Vendas da Associação</title>
-    <script src="/js/piece.js"></script>
+    <script th:src="@{/js/script.js}"></script>
 
-    <body>
+    <body onload="aux()">
         <nav id="menu">
             <ul>
                 <li class="profile"><a href="#perfil">Perfil</a></li>
@@ -28,26 +28,8 @@
             <button type="button">Categorie</button>  
         </section>
         <section id="pieces">
-            <article>
-                <li id="desc">Art piece one</li>
-                <div id="container">
-                    <img src="https://picsum.photos/600/400?business" alt="">
-                    <aside class="descricao">
-                        <li>Descrição:</li>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout. The point of using Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout. The point of using Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout. The point of using Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout. The point of using Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout. The point of using Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout. The point of using Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout. The point of using Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout. The point of using Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of 
-                        a page when looking at its layout.</p>
-                    </aside>
-                </div>
-            </article>
+
         </section>
-        <script src="/js/piece.js"></script>
+        <script th:src="@{/js/script.js}"></script>
     </body>
 </html>

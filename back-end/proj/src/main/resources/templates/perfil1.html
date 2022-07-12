@@ -1,0 +1,42 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <meta charset=UTF-8>       
+        <title>Vendas da Associação</title>
+        <script th:src="@{/js/script.js}"></script>
+    </head>
+
+    <body>
+        <nav id="menu">
+            <ul>
+                <li onclick="goToProfile()" class="profile"><a href="/profile">Perfil</a></li>
+                <div class="center">
+                    <li onclick="goToLoja()" class="loja"><a href="/">Loja</a></li>
+                    <li onclick="goToEvents()" class="events"><a href="/events">Eventos</a></li>
+                    <li onclick="goToAbout()" class="aboutus"><a href="/about">Sobre nós</a></li>
+                    <li onclick="goToContacts()" class="contacts"><a href="/contacts">Contactos</a></li>
+                </div>
+                <input onclick="showCategories()" type="text" placeholder="Pesquisa..">
+            </ul>
+        </nav>
+        <section id="foto_perfil" >
+            <button id="perfil_botao" type="input" onclick="editar_perfil()">Editar Perfil </button> 
+            <article>
+                <div id="container">
+                    <img src="https://images.virgula.com.br/2014/10/01/4111311463-capa-dia-dos-idosos.jpg" alt="">
+                    <div class="nome" id="nome">Dona Ermelinda</div>
+                    <br>
+                    <p>Reservados:
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section id="editar_perfil">
+            Nome de Utilizador: <br> <input id="editar_nome" type="text" placeholder=" Inserir Nome">
+            <br> <br>
+            Foto de Perfil: <br> <input id="add_img" type="file"> <br> <br>
+            <button type="submit" id="editar" onclick="sub_edicao()">Editar</button>
+        </section>
+        <script th:src="@{/js/script.js}"></script>
+    </body>
+</html>
